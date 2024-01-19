@@ -48,7 +48,7 @@ namespace BlazorWebAssemblyRenderNet8.Controllers
             var dbgame = await _context.VideoGames.FindAsync(id);
             if (dbgame == null)
             {
-                return NotFound($"Game not found");
+                return NotFound("Game not found");
             }
             dbgame.Title = videoGame.Title;
             dbgame.Publisher = videoGame.Publisher;
